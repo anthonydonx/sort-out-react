@@ -15,29 +15,37 @@ import {
     ReceiptOutlined,
 } from "@material-ui/icons";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const data = [
     {
         name: "Home",
         icon: <HomeOutlined />,
+        path: "/", // Add path here
     },
-    { name: "Inbox", icon: <InboxOutlined /> },
+    {
+        name: "Machines",
+        icon: <InboxOutlined />,
+        path: "/Machines", // And here
+    },
     { name: "Outbox", icon: <CheckBoxOutlineBlankOutlined /> },
     { name: "Sent mail", icon: <MailOutline /> },
     { name: "Draft", icon: <DraftsOutlined /> },
     { name: "Trash", icon: <ReceiptOutlined /> },
 ];
 
-function App() {
+function DrawerMenu() {
     const [open, setOpen] = useState(false);
 
     const getList = () => (
         <div style={{ width: 250 }} onClick={() => setOpen(false)}>
             {data.map((item, index) => (
-                <ListItem button key={index}>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
-                    <ListItemText primary={item.name} />
-                </ListItem>
+                <Link to={item.path} key={index} style={{ textDecoration: 'none', color: 'inherit' }}> {/* Wrap ListItem with Link */}
+                    <ListItem button>
+                        <ListItemIcon>{item.icon}</ListItemIcon>
+                        <ListItemText primary={item.name} />
+                    </ListItem>
+                </Link>
             ))}
         </div>
     );
@@ -59,4 +67,4 @@ function App() {
     );
 }
 
-export default App;
+export default DrawerMenu;
