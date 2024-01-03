@@ -4,6 +4,8 @@ import DrawerMenu from './components/DrawerMenu';
 import Machines from './components/Pages/Machines/Machines.jsx';
 import Home from './components/Pages/Home/Home.jsx';
 import './css/main.css'
+import ButtonUsage from "./components/ButtonUsage";
+import ButtonAppBar from "./components/AppBar";
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
     return (
         <BrowserRouter>
             <DrawerMenu />
+            {/*<ButtonAppBar/>*/}
+
             <div className="main-container">
                 <Routes>
                     <Route path="/Machines" element={<Machines/>} />
