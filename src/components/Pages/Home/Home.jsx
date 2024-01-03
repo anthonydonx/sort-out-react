@@ -1,6 +1,3 @@
-import DrawerMenu from "../../DrawerMenu";
-import Sidebar from "../../Sidebar";
-import ButtonUsage from "../../ButtonUsage";
 import React from "react";
 
 function Home() {
