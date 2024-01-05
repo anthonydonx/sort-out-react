@@ -1,4 +1,39 @@
+body {
+   margin: 0;
+}
+.container {
+   padding-left: 50px;
+   padding-right: 50px;
+}
 .main-container {
    padding-left: 300px;
    margin-top: 50px;
+}
+.redBox {
+   background-color: darkred !important;
+}
+.yellowBox {
+   background-color: yellow !important;
+}
+.redBox p{
+   color: #fff !important;
+}
+.MuiDrawer-paperAnchorDockedLeft {
+   background-color: #1976d2 !important;
+   top: 64px !important;
+   color: #fff;
+}
+.sidePanel {
+   color: #fff;
+}
+.MuiListItem-root {
+   padding-top: 10px !important;
+   padding-bottom: 10px !important;
+}
+.MuiListItemIcon-root {
+   color: #fff !important;
+   padding-left: 20px;
+}
+.MuiListItem-root span {
+   font-size: 18px !important;
 }

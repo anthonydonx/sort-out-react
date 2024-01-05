@@ -6,6 +6,8 @@ import Home from './components/Pages/Home/Home.jsx';
 import './css/main.css'
 import ButtonUsage from "./components/ButtonUsage";
 import ButtonAppBar from "./components/AppBar";
+import Sidebar from "./components/Sidebar";
+import ResponsiveAppBar from "./components/SideMenu";
 
 function App() {
 
@@ -25,13 +27,13 @@ function App() {
         <BrowserRouter>
             <DrawerMenu />
             {/*<ButtonAppBar/>*/}
-
-            <div className="main-container">
-                <Routes>
-                    <Route path="/Machines" element={<Machines/>} />
-                    <Route path="/" element={<Home />} />
-                </Routes>
-            </div>
+            <ResponsiveAppBar/>
+                <div className="main-container">
+                    <Routes>
+                        <Route path="/Machines" element={<Machines/>} />
+                        <Route path="/" element={<Home />} />
+                    </Routes>
+                </div>
         </BrowserRouter>
     );
 }

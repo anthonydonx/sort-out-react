@@ -38,7 +38,7 @@ function DrawerMenu() {
     const [open, setOpen] = useState(false);
 
     const getList = () => (
-        <div style={{ width: 250 }} onClick={() => setOpen(false)}>
+        <div className="sidePanel" style={{ width: 220 }} onClick={() => setOpen(false)}>
             {data.map((item, index) => (
                 <Link to={item.path} key={index} style={{ textDecoration: 'none', color: 'inherit' }}> {/* Wrap ListItem with Link */}
                     <ListItem button>
@@ -48,6 +48,7 @@ function DrawerMenu() {
                 </Link>
             ))}
         </div>
+
     );
 
     return (
@@ -58,6 +59,7 @@ function DrawerMenu() {
                 open={open}
                 anchor={"left"}
                 onClose={() => setOpen(false)}
+
             >
                 {getList()}{/*
                 <Divider />
