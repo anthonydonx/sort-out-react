@@ -37,7 +37,7 @@ function Machines() {
             <p>Hello Machines</p>*/}
 
             <div style={{height: 400, width: '100%'}}>
-                <DataGrid rows={data} columns={columns} pageSize={5}/>
+                <DataGrid rows={data} columns={columns} pageSize={2}/>
             </div>
 
         </>
