@@ -37,3 +37,13 @@ body {
 .MuiListItem-root span {
    font-size: 18px !important;
 }
+.footer {
+   bottom: 0;
+   position: fixed;
+   width: 100%;
+   background-color: #fff !important;
+}
+.noBorder {
+   border: 0;
+   box-shadow: none !important;
+}
