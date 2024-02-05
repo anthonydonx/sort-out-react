@@ -16,22 +16,24 @@ import {
 } from "@material-ui/icons";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import SearchIcon from "@mui/icons-material/Search";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const data = [
     {
         name: "Home",
         icon: <HomeOutlined />,
-        path: "/", // Add path here
+        path: "/home", // Add path here
     },
     {
-        name: "Machines",
-        icon: <InboxOutlined />,
-        path: "/Machines", // And here
+        name: "View PO",
+        icon: <SearchIcon />,
+        path: "/ViewMASPO", // And here
     },
     { name: "Outbox", icon: <CheckBoxOutlineBlankOutlined /> },
     { name: "Sent mail", icon: <MailOutline /> },
     { name: "Draft", icon: <DraftsOutlined /> },
-    { name: "Trash", icon: <ReceiptOutlined /> },
+    { name: "Logout", icon: <LogoutIcon />, path: "/", },
 ];
 
 function DrawerMenu() {

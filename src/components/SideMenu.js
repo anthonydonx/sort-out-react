@@ -12,10 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import SearchIcon from "@mui/icons-material/Search";
 
 //const pages = ['Dashboard', 'Machines', 'Jobs', 'Invoices'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
+const settings = ['Profile', 'Account', 'Logout'];
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
