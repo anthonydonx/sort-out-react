@@ -48,3 +48,15 @@ body {
    border: 0;
    box-shadow: none !important;
 }
+.accordion {
+   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+   font-weight: bold;
+   font-size: 18px;
+}
+.nextButtonDiv {
+   width: 100%;
+   text-align: right;
+}
+.nextButton {
+   margin-left: auto;
+}

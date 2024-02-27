@@ -7,6 +7,7 @@ import ResponsiveAppBar from "./components/SideMenu";
 import Login from "./components/Pages/Login/Login";
 import ViewMASPO from "./components/Pages/MASPO/ViewMASPO";
 import ViewMASPODetails from "./components/Pages/MASPO/ViewMASPODetails";
+import CreatePO from "./components/Pages/CreatePO/CreatePO";
 
 function App() {
     return (
@@ -19,6 +20,15 @@ function App() {
                         <ResponsiveAppBar/>
                         <div className="main-container">
                             <Home/>
+                        </div>
+                    </React.Fragment>
+                }/>
+                <Route path="/CreatePO" element={
+                    <React.Fragment>
+                        <DrawerMenu/>
+                        <ResponsiveAppBar/>
+                        <div className="main-container">
+                            <CreatePO/>
                         </div>
                     </React.Fragment>
                 }/>

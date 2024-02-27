@@ -18,12 +18,18 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import SearchIcon from "@mui/icons-material/Search";
 import LogoutIcon from '@mui/icons-material/Logout';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 const data = [
     {
         name: "Home",
         icon: <HomeOutlined />,
         path: "/home", // Add path here
+    },
+    {
+        name: "Create PO",
+        icon: <AddCircleOutlineIcon />,
+        path: "/CreatePO", // And here
     },
     {
         name: "View PO",
