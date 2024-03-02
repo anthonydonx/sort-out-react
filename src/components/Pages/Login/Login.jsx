@@ -8,7 +8,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import image1 from '/Users/kusalranasinghe/Work Folder/Macarons Digital/sort-out-react/src/static/images/loginImage.png'
+import image1 from '../../../static/images/loginImage.png'
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#fff' : 'transparent',
