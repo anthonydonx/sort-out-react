@@ -60,3 +60,6 @@ body {
 .nextButton {
    margin-left: auto;
 }
+.delBtn {
+   color: red !important;
+}

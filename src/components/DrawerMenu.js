@@ -19,6 +19,7 @@ import { Link } from 'react-router-dom';
 import SearchIcon from "@mui/icons-material/Search";
 import LogoutIcon from '@mui/icons-material/Logout';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import WorkIcon from '@mui/icons-material/Work';
 
 const data = [
     {
@@ -35,6 +36,16 @@ const data = [
         name: "View PO",
         icon: <SearchIcon />,
         path: "/ViewMASPO", // And here
+    },
+    {
+        name: "Customer",
+        icon: <WorkIcon />,
+        path: "/Customer", // And here
+    },
+    {
+        name: "Job Card",
+        icon: <WorkIcon />,
+        path: "/JobCard", // And here
     },
     { name: "Outbox", icon: <CheckBoxOutlineBlankOutlined /> },
     { name: "Sent mail", icon: <MailOutline /> },

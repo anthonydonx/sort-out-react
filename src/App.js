@@ -8,6 +8,8 @@ import Login from "./components/Pages/Login/Login";
 import ViewMASPO from "./components/Pages/MASPO/ViewMASPO";
 import ViewMASPODetails from "./components/Pages/MASPO/ViewMASPODetails";
 import CreatePO from "./components/Pages/CreatePO/CreatePO";
+import Customer from "./components/Pages/Customer/customer";
+import JobCard from "./components/Pages/Jobs/JobCard";
 
 function App() {
     return (
@@ -38,6 +40,24 @@ function App() {
                         <ResponsiveAppBar/>
                         <div className="main-container">
                             <ViewMASPO/>
+                        </div>
+                    </React.Fragment>
+                }/>
+                <Route path="/Customer" element={
+                    <React.Fragment>
+                        <DrawerMenu/>
+                        <ResponsiveAppBar/>
+                        <div className="main-container">
+                            <Customer/>
+                        </div>
+                    </React.Fragment>
+                }/>
+                <Route path="/JobCard" element={
+                    <React.Fragment>
+                        <DrawerMenu/>
+                        <ResponsiveAppBar/>
+                        <div className="main-container">
+                            <JobCard/>
                         </div>
                     </React.Fragment>
                 }/>
