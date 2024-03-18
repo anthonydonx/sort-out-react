@@ -63,3 +63,15 @@ body {
 .delBtn {
    color: red !important;
 }
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input, .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+   padding: 10px 14px !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+   top: -3px !important;
+}
+button {
+   padding: 10px 32px !important;
+}
+.MuiDataGrid-root button {
+   padding: 5px 15px !important;
+}

@@ -3,16 +3,9 @@ import {
     ListItem,
     ListItemIcon,
     ListItemText,
-    Button,
-    Divider, makeStyles,
 } from "@material-ui/core";
 import {
-    CheckBoxOutlineBlankOutlined,
-    DraftsOutlined,
     HomeOutlined,
-    InboxOutlined,
-    MailOutline,
-    ReceiptOutlined,
 } from "@material-ui/icons";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
@@ -20,6 +13,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import LogoutIcon from '@mui/icons-material/Logout';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import WorkIcon from '@mui/icons-material/Work';
+import PersonIcon from '@mui/icons-material/Person';
 
 const data = [
     {
@@ -39,7 +33,7 @@ const data = [
     },
     {
         name: "Customer",
-        icon: <WorkIcon />,
+        icon: <PersonIcon />,
         path: "/Customer", // And here
     },
     {
@@ -47,9 +41,6 @@ const data = [
         icon: <WorkIcon />,
         path: "/JobCard", // And here
     },
-    { name: "Outbox", icon: <CheckBoxOutlineBlankOutlined /> },
-    { name: "Sent mail", icon: <MailOutline /> },
-    { name: "Draft", icon: <DraftsOutlined /> },
     { name: "Logout", icon: <LogoutIcon />, path: "/", },
 ];
 
