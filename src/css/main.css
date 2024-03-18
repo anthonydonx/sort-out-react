@@ -75,3 +75,53 @@ button {
 .MuiDataGrid-root button {
    padding: 5px 15px !important;
 }
+.infoDiv {
+   padding: 0;
+   border-radius: 5px;
+}
+.infoBullets {
+   background: #575E6D;
+   color: #fff;
+   padding: 3px 10px;
+   border-radius: 20px;
+   font-size: 12px;
+   margin-right: 50px !important;
+   margin-left: 10px !important;
+}
+.noLeftMargin {
+   margin-left: 0 !important;
+}
+.fiveRightMargin {
+   margin-right: 5px !important;
+}
+.dateIcon {
+   vertical-align: middle;
+}
+.created {
+   background: #6D31ED;
+}
+.approved {
+   background: #EFB034;
+   color: #000;
+}
+.processing {
+   background: #FFD318;
+   color: #000;
+}
+.completed {
+   background: #62CD14;
+}
+.tinyButton button {
+   padding: 5px 5px !important;
+   min-width: auto !important;
+   margin-right: 10px;
+}
+.tinyButton button span {
+   margin: 0 !important;
+}
+.css-46bh2p-MuiCardContent-root:last-child {
+   padding: 8px 15px !important;
+}
+.MuiCard-root {
+   margin-bottom: 10px;
+}

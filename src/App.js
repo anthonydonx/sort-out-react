@@ -10,6 +10,8 @@ import ViewMASPODetails from "./components/Pages/MASPO/ViewMASPODetails";
 import CreatePO from "./components/Pages/CreatePO/CreatePO";
 import Customer from "./components/Pages/Customer/customer";
 import JobCard from "./components/Pages/Jobs/JobCard";
+import ViewJob from "./components/Pages/Jobs/ViewJob";
+import ViewGeneralPO from "./components/Pages/CreatePO/ViewGeneralPO";
 
 function App() {
     return (
@@ -61,12 +63,30 @@ function App() {
                         </div>
                     </React.Fragment>
                 }/>
+                <Route path="/ViewJob" element={
+                    <React.Fragment>
+                        <DrawerMenu/>
+                        <ResponsiveAppBar/>
+                        <div className="main-container">
+                            <ViewJob/>
+                        </div>
+                    </React.Fragment>
+                }/>
                 <Route path="/ViewMASPODetails" element={
                     <React.Fragment>
                         <DrawerMenu/>
                         <ResponsiveAppBar/>
                         <div className="main-container">
                             <ViewMASPODetails/>
+                        </div>
+                    </React.Fragment>
+                }/>
+                <Route path="/ViewGeneralPO" element={
+                    <React.Fragment>
+                        <DrawerMenu/>
+                        <ResponsiveAppBar/>
+                        <div className="main-container">
+                            <ViewGeneralPO/>
                         </div>
                     </React.Fragment>
                 }/>

@@ -5,7 +5,7 @@ import {
     ListItemText,
 } from "@material-ui/core";
 import {
-    HomeOutlined,
+    HomeOutlined, RemoveRedEye,
 } from "@material-ui/icons";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
@@ -32,6 +32,11 @@ const data = [
         path: "/ViewMASPO", // And here
     },
     {
+        name: "View General PO",
+        icon: <SearchIcon />,
+        path: "/ViewGeneralPO", // And here
+    },
+    {
         name: "Customer",
         icon: <PersonIcon />,
         path: "/Customer", // And here
@@ -40,6 +45,11 @@ const data = [
         name: "Job Card",
         icon: <WorkIcon />,
         path: "/JobCard", // And here
+    },
+    {
+        name: "View Job",
+        icon: <RemoveRedEye />,
+        path: "/ViewJob", // And here
     },
     { name: "Logout", icon: <LogoutIcon />, path: "/", },
 ];
